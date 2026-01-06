@@ -28,8 +28,8 @@ def show_characters():
         return
 
     print("\n=== STORED CHARACTERS ===")
-    for idx, char in enumerate(characters):
-        print(f"{idx + 1}. Name: {char['name']} | Faction: {char['faction']} | Role: {char['role']}")
+    for id, char in enumerate(characters):
+        print(f"{id + 1}. Name: {char['name']} | Faction: {char['faction']} | Role: {char['role']}")
     print()  # blank line
 
 
@@ -90,3 +90,4 @@ while True:
         break
     else:
         print("[ERROR] Invalid option. Please choose 1–4.\n")
+
